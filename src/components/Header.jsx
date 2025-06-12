@@ -6,17 +6,17 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Header = () => {
   return (
-    <header className="bg-[#5964e0] w-full flex flex-col items-center text-white px-32 py-10">
+    <header className="relative flex flex-col items-center bg-[#5964e0] min-h-[10rem] h-full  px-32 py-10 rounded-bl-[6rem] w-full text-white">
       <div className="flex justify-between w-full">
-        <h3 className="text-2xl font-bold">devjobs</h3>
-        <div className="flex gap-2 items-center text-2xl">
+        <h3 className="font-bold text-2xl">devjobs</h3>
+        <div className="flex items-center gap-2 text-2xl">
           <IoSunny />
-          <p className="text-base">switch</p>
+          <input type="checkbox" defaultChecked className="toggle bg-white text-[#5964e0] checked:bg-slate-800" />
           <IoMoon />
         </div>
       </div>
-      <form className="flex bg-white text-black px-3  w-full  *:flex *:items-center gap-4 *:gap-2">
-        <div className="border-r border-gray-400 py-5 px-2 w-full max-w-[23rem]">
+      <form className="flex *:flex *:items-center absolute -bottom-10 rounded-xl max-w-[73rem]  mx-auto gap-4 *:gap-3 bg-white px-3 w-full text-black">
+        <div className="px-2 py-5 border-gray-400 border-r w-full max-w-[23rem]">
           <FaMagnifyingGlass className="text-[#5964e0] text-2xl" />
           <input
             type="text"
@@ -24,7 +24,7 @@ const Header = () => {
             placeholder="Filter by title, companies, expertise..."
           />
         </div>
-        <div className="border-r border-gray-400 py-5 px-2 w-full max-w-[23rem]">
+        <div className="px-2 py-5 border-gray-400 border-r w-full max-w-[23rem]">
           <FaLocationDot className="text-[#5964e0] text-2xl" />
           <input
             type="text"
@@ -32,12 +32,12 @@ const Header = () => {
             placeholder="Filter by location"
           />
         </div>
-        <div className="py-5 px-2 w-full">
-          <input type="checkbox" name="fulltime" />
-          <label htmlFor="fulltime" className="font-bold w-full">
+        <div className="px-2 py-5 w-full">
+          <input type="checkbox" name="fulltime" className="w-16 h-full mr-3" />
+          <label htmlFor="fulltime" className="w-full  font-bold">
             Full Time Only
           </label>
-          <button className="bg-[#5964e0] ml-5 self-center h-12 w-full text-white px-5 py-3 flex justify-center items-center rounded-md">
+          <button className="flex justify-center items-center self-center bg-[#5964e0] ml-4 px-5 py-3 rounded-md w-full h-12 text-white">
             Search
           </button>
         </div>

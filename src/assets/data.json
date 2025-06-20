@@ -7,7 +7,7 @@
     "company": "Google",
     "location": "United States",
     "logo": "https://logo.clearbit.com/google.com",
-    "logoBackground": "#4285F4"
+    "logoBackground": "#4285A9"
   },
   {
     "id": "2",
@@ -37,7 +37,7 @@
     "company": "Apple",
     "location": "Japan",
     "logo": "https://logo.clearbit.com/apple.com",
-    "logoBackground": "#A2AAAD"
+    "logoBackground": "#FFFFFF"
   },
   {
     "id": "5",
